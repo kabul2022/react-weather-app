@@ -7,7 +7,11 @@ export default function App() {
       {" "}
       Weather App
       <footer>
-        This project was coded by Aziza Rezaie and is{" "}
+        This project was coded by{" "}
+        <a href="https://github.com/kabul2022/" target="-blank">
+          Aziza Rezaie
+        </a>{" "}
+        and is{" "}
         <a
           href="https://github.com/kabul2022/react-weather-app"
           target="-blank"
