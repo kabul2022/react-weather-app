@@ -2,20 +2,25 @@ import React, { useState } from "react";
 import "./Weather.css";
 import axios from "axios";
 
-export default function Weather() {
+export default function Weather(props) {
   const [ready, setReady] = useState(false);
   const [weatherData, setWeatherData] = useState({});
+  const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
     console.log(response.data);
     setWeatherData({
-      temperature: response.data.main.temp,
+      temperature: response.data.temperature.current,
       wind: response.data.wind.speed,
-      humidity: response.data.main.humidity,
-      city: response.data.name,
-      description: response.data.weather[0].description,
+      humidity: response.data.temperature.humidity,
+      city: response.data.city,
+      description: response.data.condition.description,
     });
     setReady(true);
+  }
+
+  function handleChangeCity(event) {
+    setCity(event.target.value);
   }
 
   if (ready) {
@@ -29,6 +34,7 @@ export default function Weather() {
                 placeholder="Enter a city.."
                 className="form-control"
                 autoFocus="on"
+                onChange={handleChangeCity}
               />
             </div>
             <div className="col-3">
