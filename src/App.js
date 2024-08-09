@@ -16,8 +16,17 @@ export default function App() {
           <a
             href="https://github.com/kabul2022/react-weather-app"
             target="-blank"
+            open-sourced
           >
-            open-sourced on GitHub
+            {" "}
+            on GitHub
+          </a>{" "}
+          and hosted on{" "}
+          <a
+            href="https://master--silver-madeleine-9f0678.netlify.app/"
+            target="-blank"
+          >
+            Nitlify
           </a>
         </footer>
       </div>
