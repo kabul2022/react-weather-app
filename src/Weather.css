@@ -31,7 +31,10 @@
   margin-left: 10px;
 }
 .weather canvas {
-  margin: 10px auto;
+  height: 64px;
+  width: 64px;
+  margin-right: 10px;
+  display: inline-block;
 }
 .weather .unit {
   color: rgb(33, 33, 33);
