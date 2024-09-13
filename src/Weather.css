@@ -1,9 +1,19 @@
 .weather {
   font-family: Arial, sans-serif;
   border: 1px solid #dadde1;
-  color: rgb(135, 135, 135);
+  color: rgb(15, 5, 5);
   padding: 16px;
   border-radius: 4px;
+  background: radial-gradient(
+    263px at 100.2% 3%,
+    rgb(12, 85, 141) 31.1%,
+    rgb(205, 181, 93) 36.4%,
+    rgb(244, 102, 90) 50.9%,
+    rgb(199, 206, 187) 60.7%,
+    rgb(249, 140, 69) 72.5%,
+    rgb(83, 118, 224) 72.6%
+  );
+  box-shadow: 10px 10px 5px 12px whitesmoke;
 }
 .weather h1 {
   font-size: 24px;
