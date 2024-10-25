@@ -4,15 +4,13 @@
   color: rgb(15, 5, 5);
   padding: 16px;
   border-radius: 4px;
-  background: radial-gradient(
-    263px at 100.2% 3%,
-    rgb(12, 85, 141) 31.1%,
-    rgb(205, 181, 93) 36.4%,
-    rgb(244, 102, 90) 50.9%,
-    rgb(199, 206, 187) 60.7%,
-    rgb(249, 140, 69) 72.5%,
-    rgb(83, 118, 224) 72.6%
+  background: linear-gradient(
+    109.6deg,
+    rgb(238, 164, 179) 11.2%,
+    rgb(212, 153, 234) 47.3%,
+    rgb(150, 121, 255) 100.2%
   );
+
   box-shadow: 10px 10px 5px 12px whitesmoke;
 }
 .weather h1 {
